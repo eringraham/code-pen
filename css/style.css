@@ -114,7 +114,7 @@ h1 {
       -ms-transform: translateY(11px) translateX(0) rotate(405deg);
           transform: translateY(11px) translateX(0) rotate(405deg);
   transition: 1s ease;
-  background: #000000;
+  background: #FFFFFF;
 }
 
 .button_container.active .middle {
@@ -127,7 +127,7 @@ h1 {
       -ms-transform: translateY(-11px) translateX(0) rotate(-405deg);
           transform: translateY(-11px) translateX(0) rotate(-405deg);
   transition: 1s ease;
-  background: #000000;
+  background: #FFFFFF;
 }
 
 .button_container span {
@@ -152,7 +152,7 @@ h1 {
 
 .overlay {
   position: absolute;
-  background: #FFFFFF;
+  background: #000000;
   z-index: 100;
   top: 0;
   left: 0;
@@ -165,7 +165,6 @@ h1 {
 
 .overlay.open {
   opacity: .85;
-  visibility: visible;
   height: 100%;
 }
 
@@ -186,58 +185,41 @@ h1 {
           animation-delay: .45s;
 }
 
-.overlay nav {
-  position: relative;
-  top: 25%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+.overlay ul {
+  margin: 5em auto;
+  padding: 0;
+}
+
+.overlay li {
+  height: 3em;
   text-align: center;
+  position: relative;
+}
+
+.overlay a {
   color: #FFFFFF;
   text-transform: uppercase;
   text-align: center;
   font-size: 1em;
   font-family: "Quicksand", sans-serif;
-  list-style-type: none;
+  text-decoration: none;
 }
 
-.overlay ul {
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  height: 100%;
-  list-style-type: none;
-  z-index: 150;
-}
-
-.overlay li {
-  list-style-type: none;
-  height: 2.5em;
-}
-
-.overlay a {
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1em;
-  font-family: "Quicksand", sans-serif;
-  list-style-type: none;
+.overlay a:hover {
+  border-bottom: 1px solid #FFFFFF;
+  opacity: .5;
 }
 
 @-webkit-keyframes slide {
   0% {
-    opacity: 0;
   }
   100% {
-    opacity: 1;
   }
 }
 
 @keyframes slide {
   0% {
-    opacity: 0;
   }
   100% {
-    opacity: 1;
   }
 }
