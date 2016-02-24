@@ -174,12 +174,3 @@ h1 {
         opacity: .5;
     }
 }
-
-@keyframes slide {
-  0% {
-    transition: left -100;  
-  }
-  100% {
-      transition: 100; 
-  }
-}
