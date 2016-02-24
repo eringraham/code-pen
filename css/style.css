@@ -56,6 +56,7 @@ body {
 .container .picture {
   margin: 0 auto;
   width: 100%;
+  max-width: 700px;
 }
 
 .container a {
@@ -87,11 +88,12 @@ body {
 
 h1 {
   position: relative;
-  color: #32c99e;
+  color: #dd3eb4;
   text-transform: uppercase;
-  font-size: 1.75em;
+  font-size: 1.5em;
   text-align: center;
   font-family: "Quicksand", sans-serif;
+  line-height: 1em;
 }
 
 .button_container {
@@ -164,8 +166,8 @@ h1 {
 }
 
 .overlay.open {
-  opacity: .85;
-  height: 100%;
+  opacity: .8;
+  height: 30%;
 }
 
 .overlay.open li {
@@ -212,14 +214,18 @@ h1 {
 
 @-webkit-keyframes slide {
   0% {
+    transition: left -100;
   }
   100% {
+    transition: 100;
   }
 }
 
 @keyframes slide {
   0% {
+    transition: left -100;
   }
   100% {
+    transition: 100;
   }
 }
