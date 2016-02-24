@@ -89,7 +89,7 @@ h1 {
     .top {
       transform: translateY(11px) translateX(0) rotate(405deg);
       transition: 1s ease;
-      background: $black;
+      background: $white;
     }
     .middle {
       opacity: 0;
@@ -99,7 +99,7 @@ h1 {
     .bottom {
       transform: translateY(-11px) translateX(0) rotate(-405deg);
       transition: 1s ease;
-      background: $black;
+      background: $white;
     }
   }
   
@@ -126,7 +126,7 @@ h1 {
 
 .overlay {
   position: absolute;
-  background: $white;
+  background: $black;
   z-index: 100;
   top: 0;
   left: 0;
@@ -138,7 +138,6 @@ h1 {
   
   &.open {
     opacity: .85;
-    visibility: visible;
     height: 100%;
     
     li {
@@ -154,41 +153,32 @@ h1 {
     }
   }
     
-  nav {
-    position: relative; 
-    top: 25%;
-    transform: translateY(-50%);
-    text-align: center;
-    @include link($white);
-    list-style-type: none;
-  }
-    
-  ul {
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    height: 100%;
-    list-style-type: none;
-    z-index: 150;
+    ul {
+        margin: 5em auto;
+        padding: 0;
     }
     
     li {
-      list-style-type: none;
-      height: 2.5em;
+        height: 3em;
+        text-align: center;
+        position: relative;
     }
     
-      a {
-        @include link($black);
-        list-style-type: none;
-      }
+    a {
+        @include link($white);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        border-bottom: 1px solid $white;
+        opacity: .5;
+    }
 }
-
 
 @keyframes slide {
   0% {
-    opacity: 0;
+      
   }
   100% {
-    opacity: 1;
   }
 }
