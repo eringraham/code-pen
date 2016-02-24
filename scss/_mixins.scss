@@ -1,0 +1,28 @@
+@mixin image {
+    margin: 0 auto;
+    width:100%;
+}
+
+@mixin titles($color){
+    color: $color;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    text-align: center;
+    font-family: $quicksand;
+}
+
+@mixin body($color) {
+    color: $color;
+    font-size: 1em;
+    text-align: center;
+    font-family: $quicksand;
+    line-height: 1.5em;
+}
+
+@mixin link($color){
+    color: $color;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    font-family: $quicksand;  
+}
