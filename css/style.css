@@ -39,7 +39,7 @@ body {
   width: 100%;
   heigh: 100%;
   text-align: center;
-  top: 40%;
+  top: 15%;
   left: 0;
   margin: 0 auto;
   font-family: 'Quicksand', sans-serif;
@@ -53,13 +53,16 @@ body {
   line-height: 1.5em;
 }
 
+.container .picture {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .container a {
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #FF5252;
   text-decoration: none;
-  font-size: 10px;
   overflow: hidden;
   top: 5px;
 }
@@ -98,7 +101,7 @@ h1 {
   height: 30px;
   width: 38px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 150;
   transition: opacity 1s ease;
 }
 
@@ -149,7 +152,8 @@ h1 {
 
 .overlay {
   position: absolute;
-  background: #32c99e;
+  background: #FFFFFF;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -160,7 +164,7 @@ h1 {
 }
 
 .overlay.open {
-  opacity: .7;
+  opacity: .85;
   visibility: visible;
   height: 100%;
 }
@@ -203,6 +207,7 @@ h1 {
   display: inline-block;
   height: 100%;
   list-style-type: none;
+  z-index: 150;
 }
 
 .overlay li {
@@ -211,7 +216,7 @@ h1 {
 }
 
 .overlay a {
-  color: #FFFFFF;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
   font-size: 1em;
